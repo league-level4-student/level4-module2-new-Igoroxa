@@ -11,9 +11,9 @@ public class GoShopping {
 	
 	public static void main(String[] args) {
 		// 2. Create a Cart object of type Candy
-		
+		Cart<Candy> sweetcart = new Cart<Candy>();
 		// 3. Create another Cart object of type Cereal
-		
+		Cart<Cereal> serialcart = new Cary<Cereal>();
 		// 4. Add a few items to EACH cart
 		
 		
