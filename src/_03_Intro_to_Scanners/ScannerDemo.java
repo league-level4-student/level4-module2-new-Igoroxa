@@ -1,10 +1,15 @@
 package _03_Intro_to_Scanners;
 
+import java.io.InputStream;
 import java.util.Scanner;
 
 public class ScannerDemo {
 
-    /*
+    public ScannerDemo(InputStream in) {
+		// TODO Auto-generated constructor stub
+	}
+
+	/*
      * A Scanner is an alternative to taking user input by using the console.
      * Unlike a JOptionPane it is also capable of taking in many data types
      * besides String.
@@ -24,7 +29,7 @@ public class ScannerDemo {
          * Eclipse's console. This may change depending on the environment where
          * are running your program or the input/output stream you are using.
          */
-
+Scanner demo = new Scanner(System.in);
         
         
         /*
@@ -41,6 +46,8 @@ public class ScannerDemo {
          * Note: Don't forget to save the results of next() or nextLine() into a
          * String variable.
          */
+System.out.println("What is your name?");
+String name = demo.nextLine();
 
         
         
@@ -51,6 +58,8 @@ public class ScannerDemo {
          * See if you can find the scanner method that does this without relying
          * on Integer.parseInt().
          */
+System.out.println("What is your age?");
+int age = demo.nextInt();
 
         
         
@@ -63,7 +72,9 @@ public class ScannerDemo {
          */
 
         // 5.) Print the user's data to the console nicely formatted.
-
+System.out.println("Are you true or false?");
+String t = demo.nextLine();
+Boolean.parseBoolean(t);
         
         
         /*
@@ -72,6 +83,7 @@ public class ScannerDemo {
          * Note: When using a Scanner with the System.in input stream in larger
          * programs only close the scanner when your program is completely done.
          */
+demo.close();
 
     }
 

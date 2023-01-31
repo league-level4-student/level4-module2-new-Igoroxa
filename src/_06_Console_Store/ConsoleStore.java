@@ -1,6 +1,6 @@
 package _06_Console_Store;
 
-public class ConsoleStore {
+public class ConsoleStore  {
 
     /*
      * Write a program that simulates shopping in a store using the Scanner and
@@ -37,6 +37,8 @@ public class ConsoleStore {
      */
 
     public static void main(String[] args) {
+int total = 100;
+System.out.println("Your total amount to spend is $ " + total);
 
     }
 
