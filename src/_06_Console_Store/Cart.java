@@ -1,10 +1,8 @@
-package _02_Generics_Store;
+package _06_Console_Store;
 
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
-
-import _06_Console_Store.Product;
 
 /*
  * The Cart class is a Bounded Type Generic class
@@ -33,11 +31,15 @@ public class Cart<T extends Product>{
         JOptionPane.showMessageDialog(null,
                 "Your cart is full!\nNo more than 5 items");
     }
-  public void remove(T item) {
-	  for (int i = 0; i < cart.length; i++) {
-		cart[i].
-	}
-  }
+
+    public Product remove(int item) {
+    if (item >= 0 && item < cart.length) {
+    	Product removed = cart[item];
+    	cart[item] = null;
+    	return removed;
+    }
+	return null;
+    }
     // Displays everything currently in the cart
     public void showCart() {
         JFrame frame = new JFrame();
@@ -48,7 +50,7 @@ public class Cart<T extends Product>{
 
         for (int i = 0; i < cart.length; i++) {
             if (cart[i] != null) {
-                panel.add(cart[i].getNonFood());
+                panel.add(cart[i].getProduct());
             }
         }
         frame.pack();

@@ -1,4 +1,4 @@
-package _02_Generics_Store;
+package _06_Console_Store;
 
 public class GoShopping {
 	// 1. Look through other classes to see how they all interact.
@@ -35,19 +35,19 @@ public class GoShopping {
 		
 		// 8. Repeat steps 2-5 for a Clothing Cart and a Toy Cart
 		
-//		Cart<Toy> playcart = new Cart<Toy>();
-//		Cart<Clothing> clothcart = new Cart<Clothing>();
-//		
-//		Toy lego = new Toy();
-//		Toy hotwheel = new Toy();
-//		playcart.add(hotwheel);
-//		playcart.add(lego);
-//		Clothing shirt = new Clothing();
-//		Clothing shorts = new Clothing();
-//		clothcart.add(shorts);
-//		clothcart.add(shirt);
-//		playcart.showCart();
-//		clothcart.showCart();
+		Cart<Toy> playcart = new Cart<Toy>();
+		Cart<Clothing> clothcart = new Cart<Clothing>();
+		
+		Toy lego = new Toy();
+		Toy hotwheel = new Toy();
+		playcart.add(hotwheel);
+		playcart.add(lego);
+		Clothing shirt = new Clothing();
+		Clothing shorts = new Clothing();
+		clothcart.add(shorts);
+		clothcart.add(shirt);
+		playcart.showCart();
+		clothcart.showCart();
 		
 		
 		// Why are there errors?

@@ -1,4 +1,4 @@
-package _02_Generics_Store;
+package _06_Console_Store;
 
 import java.io.IOException;
 
@@ -6,12 +6,10 @@ import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 
-import _06_Console_Store.Product;
-
-public abstract class Food extends Product {
+public abstract class Food extends Product{
     String item;
 
-   
+  
 
     @SuppressWarnings("rawtypes")
     public static ImageIcon loadImage(String fileName) {
