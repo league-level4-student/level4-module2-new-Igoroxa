@@ -49,6 +49,7 @@ public class ConsoleStore {
 		System.out.println("Your total amount to spend is $" + total);
 
 		Scanner first = new Scanner(System.in);
+
 		do {
 			while (working == true) {
 				System.out.println("Which operation would you like to complete?");
@@ -95,7 +96,6 @@ public class ConsoleStore {
 						if (removed instanceof Candy) {
 							total = total - 5;
 						}
-						if ()
 
 					}
 
